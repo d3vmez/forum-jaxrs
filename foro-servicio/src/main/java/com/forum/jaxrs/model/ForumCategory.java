@@ -25,6 +25,11 @@ public class ForumCategory implements Serializable{
 	@OneToMany(mappedBy = "forumCategory")
 	private List<ForumPost> posts;
 	
+	public ForumCategory() {
+		super();
+		
+	}
+
 	public ForumCategory(int id, String name, String description, List<ForumPost> posts) {
 		super();
 		this.id = id;

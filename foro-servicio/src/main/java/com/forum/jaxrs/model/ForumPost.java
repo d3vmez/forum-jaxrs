@@ -31,6 +31,11 @@ public class ForumPost implements Serializable{
     private String subject;
     private String message;
     
+	public ForumPost() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public ForumPost(int id, ForumCategory categories, ForumUser forumUser, String subject, String message) {
 		super();
 		this.id = id;

@@ -28,6 +28,11 @@ public class ForumUser implements Serializable{
 	@OneToMany(mappedBy = "forumUser")
 	private List<ForumPost> posts;
 		
+	public ForumUser() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public ForumUser(int id, @Email String email, String name, String password, List<ForumPost> posts) {
 		super();
 		this.id = id;
